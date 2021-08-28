@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "MostrarDatosPrecesados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mostrar Datos Procesados</h2>
+
+@using (Html.BeginForm("MostrarDatosPrecesados", "Persona", FormMethod.Post))
+
+{
+<table class="table table-hover">
+    <label>> Nombre:</label> @ViewBag.nombre
+    <p>
+    </p>
+    <label>> Horas Trabajadas:</label> @ViewBag.hrstrab
+    <p>
+    </p>
+    <label>> Antiguedad:</label> @ViewBag.antiguedad
+    <p>
+    </p>
+    <label>> Valor de horas: $</label> @ViewBag.valorH
+    <p>
+    </p>
+    <label>> Horas Trabajadas:</label> @ViewBag.hrstrab
+    <p>
+    </p>
+    <label>> Total a cobrar:</label> @ViewBag.total
+    <p>
+    </p>
+    <label>> Total Descuento:</label> @ViewBag.totalA
+    <p>
+    </p>
+    <label>> Total con Descuento:</label> @ViewBag.totalB
+
+</table>
+
+}

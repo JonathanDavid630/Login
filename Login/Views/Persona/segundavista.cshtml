@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "segundavista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("MostrarDatosPrecesados", "Persona", FormMethod.Post)) {
+
+<table class="table table-hover">
+
+    <label>Nombre</label>
+    <p>
+    </p>
+    <input type="text" name="nombre">
+    <p>
+    </p>
+    <label>Horas Trabajadas</label>
+    <p>
+    </p>
+    <input type="text" name="hrstrab">
+    <p>
+    </p>
+    <label>Antiguedad</label>
+    <p>
+    </p>
+    <input type="text" name="antiguedad">
+    <p>
+    </p>
+    <label>Valor de Horas</label>
+    <p>
+    </p>
+    <input type="text" name="valorH">
+    <p>
+    </p>
+    <input type="submit" />
+
+</table>
+
+}
+
